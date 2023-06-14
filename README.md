@@ -1,10 +1,10 @@
-# E-Commerce Back End App
+# E-Commerce Back End App (ORM)
 
 ## Description
 
-<!-- This JavaScript based application will allow the user to track employees in an organisation, using MySQL to read and write to a SQL-based database.
+This JavaScript based application will allow the user to manage the back-end of an e-commerce website, using Sequelize to manage a MySQL-based database.
 
-This app was built to test the builder's knowledge on working with MySQL while incorporating it with simple JavaScript modules, such as Inquirer. -->
+This app was built to test the builder's knowledge on Object Relational Mapping (ORM), through integrating a MySQL database to a back-end app using Sequelize.
 
 ## Installation
 
@@ -40,7 +40,7 @@ After performing the basic setup, open the repository that you downloaded / clon
 
 The most convinient method is through VS Code (source-code editor program), which has a function where you can directly open the terminal in the directory (e.g.) right-click on the 'Develop' folder, then select 'Open in Integrated Terminal'.
 
-![Screenshot of the directory, where you can open the integrated terminal]()
+![Screenshot of the directory, where you can open the integrated terminal](Assets/directory.png)
 
 After opening the repository directory, do the following:
 
@@ -48,15 +48,9 @@ After opening the repository directory, do the following:
 
 Then set up the database after logging into MySQL (your own cretidentials may be required):
 
-![Terminal in the 'db' folder of the app]()
+![Terminal in the 'db' folder of the app](Assets/db-directory.png)
 
     SOURCE schema.sql
-    SOURCE seeds.sql
-
-    <!-- optional: run to see if the sample database has been seeded correctly -->
-    SELECT * FROM employee;
-
-![example employee database from seeds.sql]()
 
 2. Open the terminal in the 'Develop' folder
 
@@ -65,18 +59,17 @@ Then, enter the following to run the app:
     <!-- npm i (install) only required for the initial run (will install required dependencies) -->
     npm i && npm start
 
+    <!-- seeding the database (setting up sample data for the database) -->
+    npm run seed
+
     <!-- on subsequent runs: -->
     npm start
 
-Follow the prompts (example below) then select (using UP and DOWN keys & Enter).
+3. Access the database through API GET / POST / PUT / DELETE routes
 
-![Prompts to follow after initialsing the app]()
+This can be done in various ways - example include through the API Client [Insomnia](https://insomnia.rest/), with a sample screenshot of the POST route below.
 
-Below are example screenshots of viewing and entering data.
-
-![Example of 'View All Employees']()
-
-![Example of 'Add Employee']()
+![Alt text](Assets/insomnia.png)
 
 ### Demonstration
 
@@ -84,8 +77,7 @@ Below are example screenshots of viewing and entering data.
 
 ## Credits
 
-<!-- ### Additional npm packages
-[console.table](https://www.npmjs.com/package/console.table) by Gleb Bahmutov -->
+Starter code by University of Adelaide.
 
 ## License
 
