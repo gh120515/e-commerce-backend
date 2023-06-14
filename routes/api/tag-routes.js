@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
       include: [{ 
         // its associated Product data (refer to seed)
         model: Product,
-        attributes: ['product_name', 'price', 'stock', 'category_id']
+        attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
        }],
     });
     res.status(200).json(tagData);
@@ -26,7 +26,7 @@ router.get('/:id', async (req, res) => {
       include: [{ 
         // its associated Product data (refer to seed)
         model: Product,
-        attributes: ['product_name', 'price', 'stock', 'category_id']
+        attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
        }],
     });
 
