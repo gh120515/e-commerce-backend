@@ -12,12 +12,14 @@ Category.init(
       type: DataTypes.INTEGER, 
       allowNull : false, 
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
+      // addition to circumvent Sequelize bug
+      onDelete: 'CASCADE',
     },
     // category_name column
     category_name: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     }
   },
   {

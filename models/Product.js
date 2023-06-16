@@ -45,7 +45,9 @@ Product.init(
       references: {
         model: 'category',
         key: 'id'
-      }
+      },
+      // addition to circumvent Sequelize bug
+      onDelete: 'CASCADE',
     }
   },
   {

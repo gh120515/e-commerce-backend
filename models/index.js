@@ -13,6 +13,8 @@ Product.belongsTo(Category, {
 // Categories have many Products
 Category.hasMany(Product, {
   foreignKey: 'category_id',
+  // addition to circumvent Sequelize bug
+  onDelete: 'CASCADE',
 })
 
 // Products belongToMany Tags (through ProductTag)

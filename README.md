@@ -69,15 +69,17 @@ Then, enter the following to run the app:
 
 This can be done in various ways - example include through the API Client [Insomnia](https://insomnia.rest/), with a sample screenshot of the POST route below.
 
-![Alt text](Assets/insomnia.png)
+![Sample screenshot of accessing the API POST route using Insomnia](Assets/insomnia.png)
 
 ### Demonstration
 
-[Walkthrough Video]()
+[Walkthrough Video](https://drive.google.com/file/d/1-p3R-MD7fhIpPmZfMyJTWtXFjUtA1cv2/view)
 
 ## Credits
 
 Starter code by University of Adelaide.
+
+[StackOverflow: Sequelize.js onDelete: 'cascade' is not deleting records sequelize](https://stackoverflow.com/questions/23128816/sequelize-js-ondelete-cascade-is-not-deleting-records-sequelize) : Used to circumvent issues in Sequelize not deleting cascading records involving foreign keys.
 
 ## License
 
